@@ -1,0 +1,88 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Mit MATRIX EEG verbinden",
+        "description": "Benutzername und Passwort stehen im Geräte-Assistenten der MATRIX-EEG-Plattform.",
+        "data": {
+          "url": "Broker-URL",
+          "username": "Benutzername",
+          "password": "Passwort"
+        },
+        "data_description": {
+          "url": "Standard mqtts://mqtt.matrix.ctl.digital:8883. Erlaubt sind mqtts://, mqtt:// (nur für Tests oder einen lokalen Broker) und wss://…/mqtt."
+        }
+      },
+      "entities": {
+        "title": "Entitäten wählen",
+        "description": "Welche Entitäten gehören zur Wärmepumpe?",
+        "data": {
+          "dhw_target": "Warmwasser-Sollwert",
+          "dhw_temp": "Warmwasser-Ist-Temperatur",
+          "power": "Leistung",
+          "heater_rod": "Heizstab läuft",
+          "dhw_max": "Max. Warmwassertemperatur",
+          "limit_c": "Obergrenze"
+        },
+        "data_description": {
+          "dhw_temp": "Ein Sensor oder ein Warmwasserbereiter (dessen aktuelle Temperatur).",
+          "power": "Optional, Sensor in W oder kW.",
+          "heater_rod": "Optional. Läuft der Heizstab, bricht die Plattform einen Boost ab.",
+          "dhw_max": "Optional. Der Sollwert wird nie über diesen Wert gesetzt.",
+          "limit_c": "Die Integration setzt nie einen höheren Sollwert, höchstens 60 °C."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Ungültige URL. Erlaubt sind mqtts://, mqtt:// und wss:// mit Hostname.",
+      "cannot_connect": "Keine Verbindung zum Broker.",
+      "invalid_auth": "Benutzername oder Passwort ist falsch."
+    },
+    "abort": {
+      "already_configured": "Dieses Gerät ist schon eingerichtet."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Mit MATRIX EEG verbinden",
+        "description": "Benutzername und Passwort stehen im Geräte-Assistenten der MATRIX-EEG-Plattform.",
+        "data": {
+          "url": "Broker-URL",
+          "username": "Benutzername",
+          "password": "Passwort"
+        },
+        "data_description": {
+          "url": "Standard mqtts://mqtt.matrix.ctl.digital:8883. Erlaubt sind mqtts://, mqtt:// (nur für Tests oder einen lokalen Broker) und wss://…/mqtt."
+        }
+      },
+      "entities": {
+        "title": "Entitäten wählen",
+        "description": "Welche Entitäten gehören zur Wärmepumpe?",
+        "data": {
+          "dhw_target": "Warmwasser-Sollwert",
+          "dhw_temp": "Warmwasser-Ist-Temperatur",
+          "power": "Leistung",
+          "heater_rod": "Heizstab läuft",
+          "dhw_max": "Max. Warmwassertemperatur",
+          "limit_c": "Obergrenze"
+        },
+        "data_description": {
+          "dhw_temp": "Ein Sensor oder ein Warmwasserbereiter (dessen aktuelle Temperatur).",
+          "power": "Optional, Sensor in W oder kW.",
+          "heater_rod": "Optional. Läuft der Heizstab, bricht die Plattform einen Boost ab.",
+          "dhw_max": "Optional. Der Sollwert wird nie über diesen Wert gesetzt.",
+          "limit_c": "Die Integration setzt nie einen höheren Sollwert, höchstens 60 °C."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Ungültige URL. Erlaubt sind mqtts://, mqtt:// und wss:// mit Hostname.",
+      "cannot_connect": "Keine Verbindung zum Broker.",
+      "invalid_auth": "Benutzername oder Passwort ist falsch."
+    },
+    "abort": {
+      "already_configured": "Dieses Gerät ist schon eingerichtet."
+    }
+  }
+}

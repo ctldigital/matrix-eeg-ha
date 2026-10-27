@@ -1,0 +1,9 @@
+[
+  {"name":"v2","payload":{"v":2,"id":9,"target_c":53,"fallback_c":50,"lease_s":300},"error":"Unbekannte Vertragsversion 2"},
+  {"name":"too_hot","payload":{"v":1,"id":10,"target_c":70,"fallback_c":50,"lease_s":300},"error":"Sollwert über Obergrenze 60 °C"},
+  {"name":"no_id","payload":{"v":1,"target_c":53,"fallback_c":50,"lease_s":300},"error":null},
+  {"name":"bad_lease","payload":{"v":1,"id":11,"target_c":53,"fallback_c":50,"lease_s":-1},"error":"Ungültige Lease"},
+  {"name":"target_below_fallback","payload":{"v":1,"id":12,"target_c":45,"fallback_c":50,"lease_s":300},"error":"Ungültiger Befehl"},
+  {"name":"boost_no_lease","payload":{"v":1,"id":13,"target_c":53,"fallback_c":50,"lease_s":0},"error":"Ungültige Lease"},
+  {"name":"fallback_too_hot","payload":{"v":1,"id":14,"target_c":53,"fallback_c":65,"lease_s":300},"error":"Sollwert über Obergrenze 60 °C"}
+]

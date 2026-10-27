@@ -1,0 +1,88 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to MATRIX EEG",
+        "description": "Username and password are shown in the device assistant of the MATRIX EEG platform.",
+        "data": {
+          "url": "Broker URL",
+          "username": "Username",
+          "password": "Password"
+        },
+        "data_description": {
+          "url": "Default mqtts://mqtt.matrix.ctl.digital:8883. Allowed are mqtts://, mqtt:// (only for tests or a local broker) and wss://…/mqtt."
+        }
+      },
+      "entities": {
+        "title": "Choose entities",
+        "description": "Which entities belong to the heat pump?",
+        "data": {
+          "dhw_target": "Hot water setpoint",
+          "dhw_temp": "Hot water temperature",
+          "power": "Power",
+          "heater_rod": "Heater rod running",
+          "dhw_max": "Max. hot water temperature",
+          "limit_c": "Upper limit"
+        },
+        "data_description": {
+          "dhw_temp": "A sensor or a water heater (its current temperature).",
+          "power": "Optional, sensor in W or kW.",
+          "heater_rod": "Optional. While the heater rod runs, the platform aborts a boost.",
+          "dhw_max": "Optional. The setpoint is never set above this value.",
+          "limit_c": "The integration never sets a higher setpoint, at most 60 °C."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Invalid URL. Allowed are mqtts://, mqtt:// and wss:// with a host name.",
+      "cannot_connect": "Cannot connect to the broker.",
+      "invalid_auth": "Username or password is wrong."
+    },
+    "abort": {
+      "already_configured": "This device is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Connect to MATRIX EEG",
+        "description": "Username and password are shown in the device assistant of the MATRIX EEG platform.",
+        "data": {
+          "url": "Broker URL",
+          "username": "Username",
+          "password": "Password"
+        },
+        "data_description": {
+          "url": "Default mqtts://mqtt.matrix.ctl.digital:8883. Allowed are mqtts://, mqtt:// (only for tests or a local broker) and wss://…/mqtt."
+        }
+      },
+      "entities": {
+        "title": "Choose entities",
+        "description": "Which entities belong to the heat pump?",
+        "data": {
+          "dhw_target": "Hot water setpoint",
+          "dhw_temp": "Hot water temperature",
+          "power": "Power",
+          "heater_rod": "Heater rod running",
+          "dhw_max": "Max. hot water temperature",
+          "limit_c": "Upper limit"
+        },
+        "data_description": {
+          "dhw_temp": "A sensor or a water heater (its current temperature).",
+          "power": "Optional, sensor in W or kW.",
+          "heater_rod": "Optional. While the heater rod runs, the platform aborts a boost.",
+          "dhw_max": "Optional. The setpoint is never set above this value.",
+          "limit_c": "The integration never sets a higher setpoint, at most 60 °C."
+        }
+      }
+    },
+    "error": {
+      "invalid_url": "Invalid URL. Allowed are mqtts://, mqtt:// and wss:// with a host name.",
+      "cannot_connect": "Cannot connect to the broker.",
+      "invalid_auth": "Username or password is wrong."
+    },
+    "abort": {
+      "already_configured": "This device is already configured."
+    }
+  }
+}

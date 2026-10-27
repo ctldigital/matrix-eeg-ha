@@ -1,0 +1,23 @@
+[project]
+name = "matrix-eeg-ha"
+version = "0.1.0"
+description = "MATRIX EEG Home Assistant integration (heat pump boost via MQTT contract v1)"
+# pytest-homeassistant-custom-component (HA 2026.10) requires Python >= 3.14
+requires-python = ">=3.14.2"
+dependencies = []
+
+[dependency-groups]
+dev = [
+    "pytest",
+    "pytest-asyncio",
+    "pytest-homeassistant-custom-component",
+    "paho-mqtt>=2.1",
+]
+
+[tool.uv]
+package = false
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+asyncio_mode = "auto"
